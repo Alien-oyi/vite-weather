@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="manifest" href="./mainfest.json">
+    <link rel="apple-touch-icon" href="Images/logo.png">
+    <link rel="icon" type="image/png" href="Images/logo.png">
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/assets/index-df0fd483.js"></script>
+    <link rel="stylesheet" href="/assets/index-6d977ed6.css">
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.jsx')
+                .then(registration => {
+                    console.log('SW registered: ', registration.scope);
+                }).catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+    </script>
+    
+  
+  </body>
+</html>
