@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Web site created using create-react-app">
-    <link rel="manifest" href="./mainfest.json">
+    <link rel="manifest" href="./manifest.json">
     <link rel="apple-touch-icon" href="Images/logo.png">
     <link rel="icon" type="image/png" href="Images/logo.png">
     <title>Weather App</title>
@@ -18,11 +18,11 @@
     <script>
         if('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.jsx')
-                .then(registration => {
-                    console.log('SW registered: ', registration.scope);
-                }).catch(registrationError => {
-                    console.log('SW registration failed: ', registrationError);
+                navigator.serviceWorker.register('/serviceworker.js')
+                .then(reg => {
+                    console.log('SW registered: ', reg.scope);
+                }).catch(err => {
+                    console.log('SW registration failed: ', err);
                 });
             });
         }
