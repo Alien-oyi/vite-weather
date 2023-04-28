@@ -22,7 +22,7 @@
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./public/serviceworker.js')
                 .then(registration => {
-                    console.log('SW registered: ', registration);
+                    console.log('SW registered: ', registration.scope);
                 }).catch(registrationError => {
                     console.log('SW registration failed: ', registrationError);
                 });
