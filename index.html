@@ -13,14 +13,11 @@
     <link rel="stylesheet" href="/assets/index-6d977ed6.css">
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
     <div id="root"></div>
     <script>
         if('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./public/serviceworker.js')
+                navigator.serviceWorker.register('/serviceworker.js')
                 .then(reg => {
                     console.log('SW registered: ', reg.scope);
                 }).catch(err => {
@@ -29,6 +26,8 @@
             });
         }
     </script>
+    
+    
     
   
   </body>

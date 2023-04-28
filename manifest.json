@@ -3,12 +3,17 @@
     "short_name": "Weather",
     "icons": [
         {
-            "src": "Images/logo.png",
-            "type": "image/png",
-            "sizes": "1024x1024"
+        "src": "Images/logo.png",
+        "type": "image/png",
+        "sizes": "1024x1024"
+        },
+        {
+      "src": "Images/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
         }
     ],
-    "start_url": "/vite-weather/dist/index.html",
+    "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
